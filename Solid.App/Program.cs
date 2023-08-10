@@ -1,14 +1,13 @@
-﻿using Solid.App.LSPBad;
+﻿using Solid.App.LSPGood;
 
 BasePhone phone = new IPhone();
 
-phone.call();
-phone.TakePhoto();
+phone.Call();
+((ITakePhoto)phone).TakePhoto();
 
 phone = new Nokia3310();
 
-phone.call();
-phone.TakePhoto();
+phone.Call();
 
 
 
